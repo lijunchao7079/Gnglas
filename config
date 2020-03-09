@@ -5,7 +5,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 #exec_always
-exec_always feh --bg-fill ~/imger/th.png
+exec_always feh --bg-fill ~/imger/891205.jpg
 exec_always --no-startup-id compton
 exec_always --no-startup-id fcitx
 exec_always /usr/lib/cinnamon-settings-daemon/csd-xsettings
@@ -146,8 +146,17 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #自定义快捷键
 bindsym $mod+Shift+m exec --no-startup-id chromium
 bindsym $mod+q exec --no-startup-id "bash /opt/deepinwine/apps/Deepin-TIM/run.sh"
-bindsym $mod+x exec deepin-screenshot
 bindsym $mod+y exec alias music="bash /opt/netease/netease-cloud-music/netease-cloud-music.bash &"
+
+
+# cut all the screen 
+bindsym  --release Print exec "sh ~/.config/i3/screencut/cut_all.sh"
+# cut current window
+bindsym --release $mod+Print exec "sh ~/.config/i3/screencut/cut_cur.sh"
+# cut selection 
+bindsym --release $mod+Shift+Print exec "sh ~/.config/i3/screencut/cut_sel.sh"
+
+
 #设置无边框无标签
 new_window none  #设置无边框
 new_float none  #设置无标签
