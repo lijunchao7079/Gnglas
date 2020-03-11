@@ -4,7 +4,7 @@ alsamixer 打开声音设置
 binwalk 分文件
 binwalk -e 分离文件
 virt-manager  启动kvm虚拟机 
-
+阿里云 39.105.71.38
 git 
 …or create a new repository on the command line
 echo "# Gnglas" >> README.md
