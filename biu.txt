@@ -1,7 +1,9 @@
 cinnamon-settings #打开桌面你设置
 alsamixer 打开声音设置
 
-
+binwalk 分文件
+binwalk -e 分离文件
+virt-manager  启动kvm虚拟机 
 
 git 
 …or create a new repository on the command line
