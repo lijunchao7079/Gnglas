@@ -59,7 +59,7 @@ int a = 0x12345678
 而我们使用的计算机是进行小端法存储的，
 所一我们需要进行字节序的转换
 
-在c语言中可以使用
+在c语言中可以使用 <arpa/inet.h>库
 uint32_t htonl(uint32_t hostlong)   前面讲过32位的ip，在此是将本地字节序转换
 网络字节序
 uint16_t htons(uint32_t hostshort)  16位端口号，在此是将本地端口号转换成网络
